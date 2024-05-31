@@ -17,11 +17,15 @@ UnPack = "3a884ed6-31ef-47d7-9d2a-63182c4928ed"
 Zygote = "e88e6eb3-aa80-5325-afca-941959d7151f"
 
 [compat]
+<<<<<<< HEAD
+UnPack = "1"
+=======
 Zygote = "0.6"
 Statistics = "1"
 ProgressMeter = "1"
 MLUtils = "0.4"
 Lux = "0.5"
+>>>>>>> origin/main
 julia = "1.6.7"
 
 [extras]
