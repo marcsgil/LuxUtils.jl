@@ -161,7 +161,7 @@ function train(x, y, epochs, model, ps, st;
     @assert 0 < train_test_split ≤ 1
 
     # Split data into train and test sets
-    train_data, test_data = splitobs((x, y); at=train_test_split)
+    train_data, test_data = splitobs(shuffleobs(rng, (x, y)); at=train_test_split)
     train_loader = DataLoader(train_data; batchsize, shuffle=true, rng)
     test_loader = DataLoader(test_data; batchsize)
 
